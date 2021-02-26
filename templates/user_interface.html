@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- to add bootstrap, include css bit the first thing in the head and add js bit on the bottom of the body -->
+	<!-- CSS only also a css bundle from bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<title>{%block title%}Home page{%endblock%}</title>
+	<!-- this defines a block called content and this block will alow a child template to fill this in by inheriting base.html -->
+	</head>
+	<body>
+		<!-- table my website -->
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col"> </th>
+          <th scope="col">AUD Value</th>
+          <th scope="col">Life 360 stock value (AUD)</th>
+          <th scope="col">LIfe 360 stock value (USD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"></th>
+          <td>{{AUD_val}}</td>
+          <td>{{LIFX_stock_val_AUD}}</td>
+          <td>{{LIFX_stock_val_USD}}</td>
+        </tr>
+     
+      </tbody>
+    </table>
+
+		
+
+		  <!--  -->
+		  
+		
+	<!-- JavaScript Bundle with Popper from bootstrap-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	</body>
+</html> 
